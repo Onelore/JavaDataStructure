@@ -7,8 +7,8 @@ import java.util.Map;
  * 给定一个整数数组和一个目标数组，找出数组中和为目标值的两个数
  * 你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用
  */
-public class Problem1AddTwoNumber {
-    public int[] twoSum(int[] nums,int target){
+public class Problem1 {
+    public static int[] twoSum(int[] nums,int target){
         /**1、直接暴力法
          * 复杂度分析：
          * 时间复杂度：O(n^2)
@@ -67,8 +67,7 @@ public class Problem1AddTwoNumber {
     public static void main(String[] args) {
         int[] nums={2,7,11,15};
         int target=9;
-        Problem1AddTwoNumber problem1AddTwoNumber =new Problem1AddTwoNumber();
-        int[] answer= problem1AddTwoNumber.twoSum(nums,target);
+        int[] answer= twoSum(nums,target);
         System.out.println(answer[0]+" "+answer[1]);
     }
 }

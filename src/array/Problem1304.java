@@ -17,7 +17,7 @@ import java.util.*;
  * 提示：
  * 1 <= n <= 1000
  */
-public class Problem1304AddZero {
+public class Problem1304 {
     public static int[] sumZero(int n) {
         /**
          * int []num=new int[n];

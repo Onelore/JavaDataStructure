@@ -22,8 +22,8 @@ import java.util.Arrays;
  * 输入：nums = [7,7,7,7]
  * 输出：[0,0,0,0]
  */
-public class Problem1365FindSmallerNum {
-    public int[] smallNum(int nums[]){
+public class Problem1365 {
+    public static int[] smallNum(int nums[]){
         int [] sorted=nums.clone();
         int []result=new int[nums.length];
         Arrays.sort(sorted);
@@ -45,8 +45,7 @@ public class Problem1365FindSmallerNum {
 
     public static void main(String[] args) {
         int[]nums=new int[]{7,7,7,7,7};
-        Problem1365FindSmallerNum problem1365FindSmallerNum=new Problem1365FindSmallerNum();
-        int []num=problem1365FindSmallerNum.smallNum(nums);
+        int []num=smallNum(nums);
         System.out.println(Arrays.toString(num));
     }
 }

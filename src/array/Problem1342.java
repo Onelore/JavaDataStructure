@@ -22,7 +22,7 @@ package array;
  * 步骤 4） 1 是奇数，减 1 得到 0 。
 
  */
-public class Problem1342NumberSteps {
+public class Problem1342 {
     public static int numberOfSteps (int num) {
         /**
          * 执行用时 :1 ms, 在所有 Java 提交中击败了48.22%的用户

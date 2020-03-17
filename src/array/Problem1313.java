@@ -2,7 +2,6 @@ package array;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.IntStream;
 
 /**
  * 给你一个以行程长度编码压缩的整数列表 nums 。
@@ -24,8 +23,8 @@ import java.util.stream.IntStream;
  * nums.length % 2 == 0
  * 1 <= nums[i] <= 100
  */
-public class Problem1313DecodeList {
-    public int[] Decode(int[] nums){
+public class Problem1313 {
+    public static int[] Decode(int[] nums){
         /**1、执行用时 :60 ms, 在所有 Java 提交中击败了5.06%的用户
          * 内存消耗 :41.9 MB, 在所有 Java 提交中击败了100.00%的用户
          * LinkedList linkedList=new LinkedList<>();
@@ -64,9 +63,8 @@ public class Problem1313DecodeList {
     }
 
     public static void main(String[] args) {
-        Problem1313DecodeList problem1313DecodeList=new Problem1313DecodeList();
         int[]list=new int[]{1,2,3,4};
-        int[] linkedList=problem1313DecodeList.Decode(list);
+        int[] linkedList=Decode(list);
         for (int i=0;i<linkedList.length;i++){
             System.out.println(linkedList[i]);
         }

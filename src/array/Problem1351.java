@@ -17,7 +17,7 @@ package array;
  * 输入：grid = [[-1]]
  * 输出：1
  */
-public class Problem1351CountArrayNegatives {
+public class Problem1351 {
     public static int countNegatives(int[][] grid) {
         /**
          * 执行用时 :2 ms, 在所有 Java 提交中击败了19.22%的用户

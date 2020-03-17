@@ -10,7 +10,7 @@ package array;
  * 请你在执行完所有 indices 指定的增量操作后，返回矩阵中 「奇数值单元格」 的数目。
  *
  */
-public class Problem1252OddNum {
+public class Problem1252 {
     public static int oddCells(int n, int m, int[][] indices) {
         int[] row=new int[n];
         int[] col=new int[m];

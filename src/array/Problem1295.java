@@ -22,7 +22,7 @@ package array;
  * 1 <= nums.length <= 500
  * 1 <= nums[i] <= 10^5
  */
-public class Problem1295FindNumber {
+public class Problem1295 {
     public static int findNumbers(int[] nums) {
         /**1、
          * 执行用时 :12 ms, 在所有 Java 提交中击败了5.61%的用户

@@ -10,7 +10,7 @@ package array;
  * 1 <= arr.length <= 10^4
  * 1 <= arr[i] <= 10^5
  */
-public class Problem1299ReplaceElement {
+public class Problem1299 {
     public static int[] replaceElements(int[] arr) {
 
         /**
