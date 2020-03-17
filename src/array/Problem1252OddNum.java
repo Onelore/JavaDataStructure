@@ -12,35 +12,29 @@ package array;
  */
 public class Problem1252OddNum {
     public static int oddCells(int n, int m, int[][] indices) {
-        int[] rows = new int[n];
-        int[] cols = new int[m];
-        for (int i = 0; i < indices.length; i++) {
-            rows[indices[i][0]]++;
-            cols[indices[i][1]]++;
+        int[] row=new int[n];
+        int[] col=new int[m];
+
+        for(int i=0;i<indices.length;i++) {
+            row[indices[i][0]]++;
+            col[indices[i][1]]++;
         }
-        int colEven = 0, colOdd = 0, result = 0;
-        for (int i = 0; i < m; i++) {
-            if ((cols[i] & 1) == 1) {
-                colOdd++;
-            } else {
-                colEven++;
+
+        int ans=0;
+        for(int i=0;i<n;i++)
+            for(int j=0;j<m;j++) {
+                if((row[i]+col[j])%2>0)
+                    ans++;
             }
-        }
-        for (int i = 0; i < n; i++) {
-            if ((rows[i] & 1) == 1) {   //第i行加1的次数为奇数次，那么该行中对应加1的次数为偶数次的列上的数是奇数
-                result += colEven;
-            } else {
-                result += colOdd;   //第i行加1的次数为偶数次，那么该行中对应加1的次数为奇数次的列上的数是奇数
-            }
-        }
-        return result;
+        return ans;
+
     }
 
     public static void main(String[] args) {
         int[][]num=new int[][]{{0,1},{1,1}};
         int n=2;
         int m=3;
-        oddCells(n,m,num);
+        System.out.println(oddCells(n,m,num));
 
     }
 }
