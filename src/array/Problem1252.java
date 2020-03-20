@@ -8,7 +8,11 @@ package array;
  * 你需要将每对 [ri, ci] 指定的行和列上的所有单元格的值加 1。
  *
  * 请你在执行完所有 indices 指定的增量操作后，返回矩阵中 「奇数值单元格」 的数目。
- *
+ *输入：n = 2, m = 3, indices = [[0,1],[1,1]]
+ * 输出：6
+ * 解释：最开始的矩阵是 [[0,0,0],[0,0,0]]。
+ * 第一次增量操作后得到 [[1,2,1],[0,1,0]]。
+ * 最后的矩阵是 [[1,3,1],[1,3,1]]，里面有 6 个奇数。
  */
 public class Problem1252 {
     public static int oddCells(int n, int m, int[][] indices) {
@@ -27,6 +31,8 @@ public class Problem1252 {
                     ans++;
             }
         return ans;
+
+
 
     }
 
